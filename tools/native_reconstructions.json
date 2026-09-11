@@ -1,0 +1,5010 @@
+{
+  "description": "Semantic C++ reconstructions. Original bodies remain provenance, not product implementations. Legacy callers temporarily use the named ABI bridge.",
+  "entries": {
+    "0x411d15": {
+      "implementation": "Dialogue::style_flags",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x411d4b": {
+      "implementation": "Dialogue::style_variant",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x404e4c": {
+      "implementation": "Palette::adjust_rgb",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x408de1": {
+      "implementation": "fixed_sin",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x408e69": {
+      "implementation": "fixed_cos",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41a126": {
+      "implementation": "sequence_alu",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41aa9f": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 3,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41b1f3": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 6,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41b3e8": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 7,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41b9fd": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 11,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41bb5c": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 12,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41bf7f": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 14,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41cced": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 18,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x404cf0": {
+      "implementation": "Palette::grayscale",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_script_path": "Vm::callback_command"
+    },
+    "0x404ed0": {
+      "implementation": "Palette::copy_words",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_script_path": "Vm::callback_command"
+    },
+    "0x41a2a8": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 0,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41ab8a": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 4,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41afe7": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 5,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41b49f": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 8,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41bc31": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 13,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41bfd7": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 15,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41c275": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 16,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41c7ed": {
+      "implementation": "ScriptControl::execute",
+      "opcode": 17,
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447841": {
+      "implementation": "EffectScript::start",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447898": {
+      "implementation": "EffectScript::stop",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4478ba": {
+      "implementation": "EffectScript::tick",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461d25": {
+      "implementation": "EffectScript::notify_controller",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447925": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44793b": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447949": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44798f": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4479d5": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447a2e": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447a8d": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447aec": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447b3b": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447b84": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447bba": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447bf0": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447c54": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447cb8": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447ce5": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447d23": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447d50": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447d7f": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447dbc": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x447df9": {
+      "implementation": "EffectScript::execute",
+      "bridge": "native_effect_script.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x498090": {
+      "implementation": "crt_rand",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x499150": {
+      "implementation": "signed_magnitude",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41a0fb": {
+      "implementation": "ScriptControl::find_marker",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41b38c": {
+      "implementation": "ScriptControl::push_call",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41b97f": {
+      "implementation": "ScriptControl::pop_loop",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x41c74e": {
+      "implementation": "ScriptControl::select_branch",
+      "bridge": "native_reconstructed.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44caee": {
+      "implementation": "combat::Status::clear_turn_flags",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44cb26": {
+      "implementation": "BattleRules::status",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e56d": {
+      "implementation": "combat::Status::afflict_enemy",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e689": {
+      "implementation": "combat::Status::afflict_party",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e46e": {
+      "implementation": "combat::Status::refresh_equipment_flags",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4489d0": {
+      "implementation": "BattleRules::equipped",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44c6eb": {
+      "implementation": "BattleRules::decay_status",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44cbd2": {
+      "implementation": "BattleRules::advance_gauges",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44cd05": {
+      "implementation": "BattleRules::next_context",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d233": {
+      "implementation": "BattleRules::precheck",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d297": {
+      "implementation": "BattleRules::prepare_vitality",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d2d8": {
+      "implementation": "BattleRules::commit_vitality",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44cb7a": {
+      "implementation": "BattleRules::take_poison_delta",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d345": {
+      "implementation": "BattleRules::apply_delta",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44de15": {
+      "implementation": "combat::Status::award_experience",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e7d3": {
+      "implementation": "combat::Status::capped_amount",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d389": {
+      "implementation": "BattleRules::snapshot_party_panel",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d40a": {
+      "implementation": "BattleRules::snapshot_enemy_panel",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d09c": {
+      "implementation": "BattleRules::default_action",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44d102": {
+      "implementation": "BattleRules::default_handler",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e16c": {
+      "implementation": "BattleRules::relation",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e200": {
+      "implementation": "BattleRules::relation_hit_bonus",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e231": {
+      "implementation": "BattleRules::relation_damage_percent",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e265": {
+      "implementation": "BattleRules::counter_chance",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e2de": {
+      "implementation": "BattleRules::guard_percent",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e775": {
+      "implementation": "BattleRules::accuracy_bonus",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44ce7b": {
+      "implementation": "combat::Status::actor_at_tile",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44e3e1": {
+      "implementation": "combat::Status::marker_facing",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44cdf3": {
+      "implementation": "BattleRules::clear_cursor",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x451ec6": {
+      "implementation": "BattleRules::mark_reachable",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44dd1c": {
+      "implementation": "BattleRules::compute_rewards",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x447e31": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x447ea3": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x447ef9": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x447f4c": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x447f9f": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x447fef": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448042": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448095": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4480e8": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4481a9": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44821f": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44828a": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44830f": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4483b5": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44844e": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4484f4": {
+      "implementation": "combat::Pose::apply",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452372": {
+      "implementation": "combat::Ai::validate_candidates_before_active",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4523b9": {
+      "implementation": "combat::Ai::validate_region_candidates",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x45240c": {
+      "implementation": "combat::Ai::best_candidate_in_regions",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x45244d": {
+      "implementation": "combat::Ai::best_candidate_in_region",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x453273": {
+      "implementation": "combat::Ai::best_candidate",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452c4d": {
+      "implementation": "combat::Ai::refresh_hurt_ratios",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452c0c": {
+      "implementation": "combat::Ai::priority_skill",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452a00": {
+      "implementation": "combat::Ai::begin_action",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x451e1e": {
+      "implementation": "combat::Ai::select_region_count",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x454220": {
+      "implementation": "combat::Ai::clear_line_effects",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x45297e": {
+      "implementation": "combat::extract_mask_offsets",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x451e3f": {
+      "implementation": "combat::extract_mask_spans",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452ce2": {
+      "implementation": "combat::Ai::bias_score",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452cf2": {
+      "implementation": "combat::Ai::move_score",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452e79": {
+      "implementation": "combat::Ai::pressure_scaled",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452eb4": {
+      "implementation": "combat::Ai::pressure_flat",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452eea": {
+      "implementation": "combat::Ai::pressure_steep",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448d72": {
+      "implementation": "combat::Grid::reset_dimensions",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x449999": {
+      "implementation": "combat::Grid::mark_party_tiles",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4499cb": {
+      "implementation": "combat::Grid::clear_target_tables",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x449f5b": {
+      "implementation": "combat::Grid::reset_actor_records",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448aca": {
+      "implementation": "combat::Grid::region_blocked",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448c6e": {
+      "implementation": "combat::Grid::reserve_footprint_tile",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448a98": {
+      "implementation": "combat::Grid::set_encounter_override",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448ab1": {
+      "implementation": "combat::Grid::clear_encounter_override",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448a39": {
+      "implementation": "combat::Grid::unlock_skill",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448977": {
+      "implementation": "combat::Grid::stat_greater",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44899e": {
+      "implementation": "combat::Grid::stat",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44a93e": {
+      "implementation": "combat::Grid::load_difficulty",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44aaa1": {
+      "implementation": "combat::Grid::apply_difficulty",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44ab05": {
+      "implementation": "combat::Grid::mark_entrance_actor",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44a8d7": {
+      "implementation": "combat::Grid::clear_overlay_modal",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x45149b": {
+      "implementation": "BattleRules::prepare_handler",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4519dd": {
+      "implementation": "BattleRules::collect_targets",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x451885": {
+      "implementation": "BattleRules::collect_targets",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4622b6": {
+      "implementation": "combat::Flow::fade_idle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x461ca2": {
+      "implementation": "combat::Flow::finish_pending_steps",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44a8df": {
+      "implementation": "combat::Flow::trigger_scripted",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44ab2e": {
+      "implementation": "combat::Flow::end_player_turn",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4499f0": {
+      "implementation": "combat::Flow::release_target_tables",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x462790": {
+      "implementation": "combat::Flow::track_anchor",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448a0a": {
+      "implementation": "combat::Grid::party_owns_item",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x451b30": {
+      "implementation": "combat::Ai::tile_distance",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4532a5": {
+      "implementation": "combat::Ai::step_direction",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452014": {
+      "implementation": "combat::Ai::collect_tiles",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4529c2": {
+      "implementation": "combat::Ai::prepare_action_offsets",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x451b57": {
+      "implementation": "combat::Ai::party_target_weight",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46a7e8": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a7fe": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a80f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a820": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a836": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a859": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a86f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a885": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a89b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a8ac": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a8bd": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a8d3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46aba0": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46abb6": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46abcc": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46abe2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46abf3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ac04": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ac1a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ac2b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ac3c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ac52": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ac63": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ac74": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b01c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b3f2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b445": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b456": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b4a9": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b4ba": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b50d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b51e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b571": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b582": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b593": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b5b6": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b5cc": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b5e2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b605": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b628": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b64b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b66e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b691": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b6a2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b6c5": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b6d6": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b6e7": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b6fd": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b70e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b71f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b735": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b746": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b75c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ba34": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ba4a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ba60": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ba71": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bcf1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bd07": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bd1d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bd5a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bd6b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bd7c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bfda": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bfeb": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bffc": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c012": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c028": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c060": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c076": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c56d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c583": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c594": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c5a5": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46cae9": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46cafa": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46cba2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d203": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d214": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d225": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d236": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d8dd": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d8ee": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dbb3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dbc4": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dbd5": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dbf8": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dc09": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dc1a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dc8f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46df9c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dfad": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e30c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e31d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e32e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e5fb": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e60c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e622": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e633": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e649": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e65a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e66b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e681": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e692": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e6a3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e6b4": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e6d7": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e6fa": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e71d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e740": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e763": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e779": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e79c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e7bf": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e7e2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e7f3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e809": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e82c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e842": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e853": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e869": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e88c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e89d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46eb9c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ebb2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ebc3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ebd4": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ebea": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ec0d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ec1e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ec2f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ec52": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ec68": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ec8b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46eca1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ecc4": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ece7": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ecf8": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46f661": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46fbe8": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46fec1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46fee4": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ff07": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ff1d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47016e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47017f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470195": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4701b8": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4701ce": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4701e4": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4701fa": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47020b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47021c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47022d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470243": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470259": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47026a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470280": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470296": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4702a7": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4705a3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4708ce": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4708f1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470914": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470925": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470948": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47096b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47097c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470992": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470ae0": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470af1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b14": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b25": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b36": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b47": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b58": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b69": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b7a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x471347": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x471358": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x471369": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47137a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47138b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4713ae": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4719c0": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4719d1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x472548": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47354d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4739e8": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4739fe": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x473cb1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x474766": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x476765": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x477444": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x477482": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4774c0": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47aa55": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47aaa5": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47aaf5": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47b5f9": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47b60a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47bb59": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47bedf": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47d052": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47d095": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47d0d8": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47d11b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47d15e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47d1a1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47d59f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47db70": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47dbf5": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47dfd5": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47dfe6": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4806eb": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4807d7": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x480827": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x480877": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x481387": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x481406": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x481449": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48148c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48239e": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48281a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48282b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48283c": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x482aa9": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x482ef9": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x482f0a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48314f": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48315d": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48316b": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4837b7": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4837c3": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4837d1": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x483c68": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4840a2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48456a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x484bc0": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x484c03": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4853e2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x485de2": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x486577": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48659a": {
+      "implementation": "SkillCallbacks::invoke",
+      "bridge": "d_effects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x467417": {
+      "implementation": "RingEffect::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4672b5": {
+      "implementation": "RingEffect::tick",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4674de": {
+      "implementation": "SweepController::run",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x42feaa": {
+      "implementation": "actor_core::is_script_selector",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 4,
+      "instruction_sha256": "20cffb0fb1d7eb5a95430dd2a81d35f40397859a2bff784e870fb147f89091ac"
+    },
+    "0x457ec9": {
+      "implementation": "actor_core::resolve_slot",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 40,
+      "instruction_sha256": "dc91589ff69444bfd4a0e1edbecf9ff074ace98aa820d91372cd7e560f9b30f1"
+    },
+    "0x42fecd": {
+      "implementation": "actor_core::resolve_selector",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 11,
+      "instruction_sha256": "d49154c8bbdd3cd288a73576fcc13787789a7d52d13991c7766d4afb956add2a"
+    },
+    "0x4302d2": {
+      "implementation": "actor_core::resolve_or_report",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 14,
+      "instruction_sha256": "2506a9d8121ea28837671ea757cecf25d7eb38838e56e514f81970191c3f8f9f"
+    },
+    "0x42fef2": {
+      "implementation": "actor_core::attach_sequence_actor",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 7,
+      "instruction_sha256": "81c40e9ff47b02bf682486868b44d92012f593a52e79a256ee13b514abbf5427"
+    },
+    "0x457e56": {
+      "implementation": "actor_core::player_character",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 3,
+      "instruction_sha256": "0765d69f0125f3e23e5a28d68ca8a78316af5ab0294b22bc62711db64d9ce91b"
+    },
+    "0x45f528": {
+      "implementation": "actor_core::character_active",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 19,
+      "instruction_sha256": "0710da70fc2478f988ed087aac29ba4166bcf07850a1f4fb8f579fee352d066f"
+    },
+    "0x4306cb": {
+      "implementation": "actor_core::actor_exists",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 19,
+      "instruction_sha256": "eabd0e75b2f9f2ec7925dfd40bf3e653ffeb4b07c444b65d427078c7fc06a104"
+    },
+    "0x42ff47": {
+      "implementation": "actor_core::visible",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 21,
+      "instruction_sha256": "17252538dbf781f4e19fdde466f78b7a8724ec2b7dccd5c97421d93ec1902f50"
+    },
+    "0x42ff81": {
+      "implementation": "actor_core::visible_by_selector",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 9,
+      "instruction_sha256": "4e58b7d945ec32247c1a8cb90747bc28d651bbb823b9ce35246b63a4b3d048ac"
+    },
+    "0x43001f": {
+      "implementation": "actor_core::tile_state",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 21,
+      "instruction_sha256": "9a76b565ce572eecba534058f27c3e781c158cb86704203acacc68be894caf5c"
+    },
+    "0x430005": {
+      "implementation": "Actors::visible",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 8,
+      "instruction_sha256": "00e614dc01080220ebb159f3fd83b73f8d9b1363b46356d219abb15d6981463a"
+    },
+    "0x4300e1": {
+      "implementation": "actor_core::reset_pose_row",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 35,
+      "instruction_sha256": "b7feffbc337e7360823dd6a599e7c2ac95d49f7b31514863ea80750168b9466b"
+    },
+    "0x4301a8": {
+      "implementation": "actor_core::set_facing",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 4,
+      "instruction_sha256": "573ff4b1ebb3d32ef1fcee14581c1588812d1ad2eaa7bba2930e734d2095e540"
+    },
+    "0x4301b9": {
+      "implementation": "actor_core::set_target_facing",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 4,
+      "instruction_sha256": "fc03b181a9ea03208506b155d97fe77d882b61166057813c6e29aad00f2a4310"
+    },
+    "0x4301ca": {
+      "implementation": "actor_core::set_both_facings",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 5,
+      "instruction_sha256": "4183130501efcc9b6d978c25d9f204b665b8c419e0976777a562ff68f923836d"
+    },
+    "0x43036f": {
+      "implementation": "actor_core::turn_by_selector",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 6,
+      "instruction_sha256": "89084ff5a150be91be514c35597e4f78f96a67b94261a2bf7f42442a162f86f0"
+    },
+    "0x42ff0c": {
+      "implementation": "Dialogue::clear_sequence",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 21,
+      "instruction_sha256": "be4ee2fb6e6c1fc43458b67c24974fddcec10a26f0ed6c093201d3e7e2359a1b"
+    },
+    "0x43029b": {
+      "implementation": "actor_core::refresh_tile_from_pixels",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 23,
+      "instruction_sha256": "ac1f96b9a61b99dfbd7a3f24559bdec4fb63ec1a9b2b0038f59f478f002ced4f"
+    },
+    "0x4301e1": {
+      "implementation": "actor_core::place_at_pixels",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 26,
+      "instruction_sha256": "633f6d3ba06596c0759092be83c1048fc973558f30c1b2ddedb4a20ceac546ef"
+    },
+    "0x45d774": {
+      "implementation": "set_actor_tile_position",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 32,
+      "instruction_sha256": "8e730c3fd257caba9e7ef72b329bb5a67a4b2581e3475259de8394638cd2319d"
+    },
+    "0x45d82d": {
+      "implementation": "actor_core::tile_to_pixels",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 10,
+      "instruction_sha256": "7befce77dab9b39caa991d58c0924f8d1ed98d3f08a1ef6a50ddc06f268aa971"
+    },
+    "0x4303e5": {
+      "implementation": "actor_core::place_at_tile",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 27,
+      "instruction_sha256": "cd2e1a93cbb3e426b48eeaa81a02c759358555ef50514a6e05cc99301abcc7f7"
+    },
+    "0x430385": {
+      "implementation": "actor_core::copy_placement",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 35,
+      "instruction_sha256": "38f5e1741db09cf782ae385b8ab2981d0eb1ea805859ba0e6500116bcfe069d2"
+    },
+    "0x43023e": {
+      "implementation": "actor_core::refresh_screen_anchor",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 28,
+      "instruction_sha256": "11c303a018c2e89d9e9c153e00048b7fab901db9e696f456ea0275c6755298db"
+    },
+    "0x430aa6": {
+      "implementation": "actor_core::read_tile_position",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 21,
+      "instruction_sha256": "04578ed6cd9df21ae66ddf690e87b3244e2f6e58684285e2093984a425074552"
+    },
+    "0x430ae2": {
+      "implementation": "actor_core::read_pixel_position",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 21,
+      "instruction_sha256": "92648c6f86aded8114eda2118aa639fd0d46830807b27e3f15d415e075ecc334"
+    },
+    "0x45dc7f": {
+      "implementation": "actor_core::refresh_view_anchor_records",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 15,
+      "instruction_sha256": "55e4881f948855c08d7ddb55f4ec6cf6bdb35ffe8ebf61a535b8b4638de5a6ea"
+    },
+    "0x45d889": {
+      "implementation": "a_actors_bridge.cpp (memset of one word)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 6,
+      "instruction_sha256": "af30de2c03a9f14b62d4fdfc447c32026118772b6e0122fc8915a97d6be89aac"
+    },
+    "0x45db3d": {
+      "implementation": "actor_core::set_visual_control_bits",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 3,
+      "instruction_sha256": "5b163afe8e5e9d85cadbfd2f3521e04b41da3134c60abfb0476021bcc4e8e56f"
+    },
+    "0x45db48": {
+      "implementation": "actor_core::clear_visual_control_bits",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 3,
+      "instruction_sha256": "086bb5ec843356fe65f1272db97ebeb93ce3639ec6b00664f9bd7c42a186c86d"
+    },
+    "0x45db53": {
+      "implementation": "actor_core::save_motion_block",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 9,
+      "instruction_sha256": "2c4fd7849ebea79d5e41edd92c1b4f60ebf1e9369b316412fe8e4f3819b2eb19"
+    },
+    "0x45db6c": {
+      "implementation": "actor_core::restore_motion_block",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 9,
+      "instruction_sha256": "40e87bdd6c87fde973622ecc58d0689a0e1ee21747f99a16553908dc2bc434ef"
+    },
+    "0x45d6ab": {
+      "implementation": "actor_core::clear_pending_move_target",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 43,
+      "instruction_sha256": "27a58342f71ac9e4f804d4f20edf682f38e17697f0bd95cd7581047be6538dd2"
+    },
+    "0x45d9c8": {
+      "implementation": "actor_core::clear_all_pending_moves",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 10,
+      "instruction_sha256": "f726c6063d0aed967a2cc12edf9722ee42115464a589a310adac4b9d467905a4"
+    },
+    "0x45f47e": {
+      "implementation": "actor_core::reset_party_slots",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 9,
+      "instruction_sha256": "86a379ae7751246840a82daced57c340e4dd469437ef4794d0da1f7756f4eaa6"
+    },
+    "0x460848": {
+      "implementation": "actor_core::release_unfocused_party_visuals",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 13,
+      "instruction_sha256": "177902d67d7f4ae16b40f3f3b9cc4a4209f07a09ca92ea6f1a02fbd71b8305d6"
+    },
+    "0x461841": {
+      "implementation": "actor_core::clear_tileset_slot_heads",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 6,
+      "instruction_sha256": "74d9c5cf26dae3ae3b1def9bdd39220f140beda403c71e4ec6cf8225bbb62d61"
+    },
+    "0x45da86": {
+      "implementation": "actor_core::reset_battle_track_state",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 3,
+      "instruction_sha256": "ff174074f5c2f3cd9fd2a3d2c96b393200cbe662deef68375dda27bddfa56110"
+    },
+    "0x458d78": {
+      "implementation": "actor_core::release_gatewarp_objects",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 23,
+      "instruction_sha256": "4e91a60ce0966399c41702b4071f6be492c393358e814895eda3c4363dc824ec"
+    },
+    "0x458da9": {
+      "implementation": "actor_core::prepare_special_map_transition",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 5,
+      "instruction_sha256": "d0892834601ab8a3db4e0875d0748a8df8dbb8820a5993fb1ea5090ab197b5a2"
+    },
+    "0x431700": {
+      "implementation": "actor_core::event_flag_word",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 4,
+      "instruction_sha256": "1a33ae311d0e6a209d3f42dad0b13dc6df13089011b66f026ce3030df6b3122a"
+    },
+    "0x431710": {
+      "implementation": "actor_core::set_event_flag_bit",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 9,
+      "instruction_sha256": "a0e237fc83e8d82f83fd737340c1df5f2ce631b4a6b456e45ceeddb725f4835f"
+    },
+    "0x4604df": {
+      "implementation": "actor_core::show_party_panel",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 6,
+      "instruction_sha256": "155b825b1a8107c47e2c705ecbd516b6faa273bd0774114907ab9dd905a792cb"
+    },
+    "0x460528": {
+      "implementation": "actor_core::request_slot_map_transition",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 5,
+      "instruction_sha256": "c813f119ed482d135593935302166a9543493bd29faedec1e24feb55655f133c"
+    },
+    "0x45e404": {
+      "implementation": "actor_core::compare_three_way",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 11,
+      "instruction_sha256": "afdd7ecbaee2e814265171d2abb8448a8bffc21eebcfaef3fecd7743b9f17649"
+    },
+    "0x431749": {
+      "implementation": "actor_core::worldmap_mode_for_selector",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 42,
+      "instruction_sha256": "5d4d1b23c97861e62f3e52787e6b2f35f0be88c997833e9d35954e40b7e24aed"
+    },
+    "0x43172b": {
+      "implementation": "a_actors_bridge.cpp (original logs INTER_BATTLE_AreaSet unimplemented)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 4,
+      "instruction_sha256": "e31120f5df5b59ebe5c2551e1536cc3509f8583f8d221b7706db1922f89741b5"
+    },
+    "0x431739": {
+      "implementation": "a_actors_bridge.cpp (forwarder to 0x435ffa)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 4,
+      "instruction_sha256": "b9196a55c6ac68e3737bb15ef57ba6749a8cd0466ecf8d82aeaad51312d7af92"
+    },
+    "0x4317e8": {
+      "implementation": "a_actors_bridge.cpp (forwarder to 0x4360be)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 3,
+      "instruction_sha256": "3569428cc391d5080be717aa186cb3093dca463fbd8cbbeb501bd3fb8a0fa509"
+    },
+    "0x45ef2d": {
+      "implementation": "a_actors_bridge.cpp (frame gate ahead of 0x45e5f9)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 6,
+      "instruction_sha256": "ced8329b372f23dddcdbc544854ba71d76cf7694c2a2e88ae4e333d415079fd2"
+    },
+    "0x43070b": {
+      "implementation": "actor_core::live_party_count",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 30,
+      "instruction_sha256": "c1df4d6977d85c51fc2cf7eefc99c7b3ded875cae1bb19dd17bc4e9f75da44f6"
+    },
+    "0x43075b": {
+      "implementation": "actor_core::rewind_party_iterator",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 27,
+      "instruction_sha256": "ddfc222881b5518527a244a751585764546549f3241fe90a49df137b56e3c64e"
+    },
+    "0x4307ac": {
+      "implementation": "actor_core::next_live_party_member",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 16,
+      "instruction_sha256": "a4f4b5a667e801bc329b1e17e786202f304cdc53e61a3fbea1a4f65f3bdfc18e"
+    },
+    "0x430a7f": {
+      "implementation": "actor_core::hide_all_party",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 14,
+      "instruction_sha256": "2adcaca79b9f0332975e22d2b4391a5f108f49d8c5692cfed59c6538194e2982"
+    },
+    "0x43033d": {
+      "implementation": "a_actors_bridge.cpp (release through 42ff0c/40275a/476765)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 16,
+      "instruction_sha256": "53051121ee6e33472b75e9ca69837ec34e90df7bccf7dbb20db0003d6485f862"
+    },
+    "0x45d7cb": {
+      "implementation": "actor_core::write_vector3",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 18,
+      "instruction_sha256": "39589a7517c56f4bb67e11b1ddac2efa90295810ce951c20228dbae7fbbaaaf1"
+    },
+    "0x45d7fc": {
+      "implementation": "actor_core::write_vector3",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 18,
+      "instruction_sha256": "1e45edb2b725215846c3175c16dbabbe020242de9984e7da8fde3839f80db868"
+    },
+    "0x45d91d": {
+      "implementation": "actor_core::finalize_object",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 40,
+      "instruction_sha256": "5722767498c44e8b2b603b5fddcc260c2b61d4a0feb76a9a3aa52b6d67e83302"
+    },
+    "0x45d84b": {
+      "implementation": "actor_core::reset_slot_range",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 22,
+      "instruction_sha256": "e0f4931dafe55bd98ab7726730ca4832efc052a21a325bdfc271d23faff6c4e2"
+    },
+    "0x45d89c": {
+      "implementation": "actor_core::spawn_callback_object",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 38,
+      "instruction_sha256": "685d06a6014e9896a5b4280b3bd76d97461cb1c04ad1ba890967458c542560ac"
+    },
+    "0x45d9e7": {
+      "implementation": "actor_core::copy_render_state",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 50,
+      "instruction_sha256": "423fa5530fcccb0f30c98721b37e34403a9b257036426fec6130ea7cb34daafd"
+    },
+    "0x45da95": {
+      "implementation": "actor_core::init_global_motion_template",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 40,
+      "instruction_sha256": "714bd92126db7dcc066af855438694aa92e1ea19acb9dbdc2cb6faac82856ebf"
+    },
+    "0x45db85": {
+      "implementation": "actor_core::invoke_callback_substate",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 30,
+      "instruction_sha256": "ed210aff595a96694efc6a509c920bd152aa1dafbeab85420010a646ed2a41d9"
+    },
+    "0x45e139": {
+      "implementation": "actor_core::open_item_use_menu",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 7,
+      "instruction_sha256": "5878158d33ccff9f8b5e2cb12205bcaba52abf91c54e98e2c5105750b531e231"
+    },
+    "0x45f495": {
+      "implementation": "actor_core::focus_next_party_slot",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 40,
+      "instruction_sha256": "ea0d49a8445554732edaaea80ab91b25a16d6fa5e6e715e76d523771d65e8d50"
+    },
+    "0x45f554": {
+      "implementation": "actor_core::focus_party_character",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 52,
+      "instruction_sha256": "05c150083fc31bf695bb800690a90c04698b25e1b3b3565642346c37c0737654"
+    },
+    "0x45ef3f": {
+      "implementation": "Actors::push_snapshot",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 28,
+      "instruction_sha256": "923da3543d969e2907bcf7f3687a75660d896e986b77384a21cc67f3fec68516"
+    },
+    "0x45f0e9": {
+      "implementation": "Actors::spawn_party",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 67,
+      "instruction_sha256": "f670e1308b4f128beff991365eaf6b8e731b40f7d3aa0347eb64ed496c987ed7"
+    },
+    "0x45df01": {
+      "implementation": "Actors::compose_stats",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 111,
+      "instruction_sha256": "0201cf1fd127154c861740ddb68dc2593b43d50034bb5e3666ce1deedbac1835"
+    },
+    "0x430b1e": {
+      "implementation": "actor_core::ifc_register",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 38,
+      "instruction_sha256": "810da69cbc9b75e603ec101472b7ffdb7227ef033c069682828093425d2f50de"
+    },
+    "0x430cc3": {
+      "implementation": "actor_core::ifc_live_sequence",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 11,
+      "instruction_sha256": "140a8e495a2d027be1d507e058d182fcbc82bfbe0608d706a3d58e328ac3f484"
+    },
+    "0x430ce8": {
+      "implementation": "actor_core::ifc_bind_sequence",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 16,
+      "instruction_sha256": "3c678f351a6ab129a119885b3ced9eea615af6a86aa97363dc4cbf70b71ce50a"
+    },
+    "0x430ba9": {
+      "implementation": "a_actors_bridge.cpp (restore through 42ff9b/430059, release through 43033d)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 20,
+      "instruction_sha256": "93c7a9e2c2e0a3f2d01ec19937cb39d5821686832e7946d7569b0b2778a1b2fd"
+    },
+    "0x458dc4": {
+      "implementation": "Actors::apply_entry_direction",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 55,
+      "instruction_sha256": "a60171ed967623c0725ef04dbf4744bc3c1fe9808e220f8b26ca7691c48a2cb6"
+    },
+    "0x430434": {
+      "implementation": "Actors::replace_with_party_actor",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 82,
+      "instruction_sha256": "3ae82cc707e1f7b8683911d0d42b2512847b12785d05b5c5b6af430bbb494d59"
+    },
+    "0x430527": {
+      "implementation": "Actors::swap_player",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 140,
+      "instruction_sha256": "e44fbe07a36a27c449d469628fbb08ec35f63a0f8d0c0d31005a6c9e1cecc544"
+    },
+    "0x4580f7": {
+      "implementation": "actor_core::tick_attached_gatewarp",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 108,
+      "instruction_sha256": "97ecd21d41e91a4b47d2af6b54fdc55e9d0deb187eb3ece185a38ce2c06c7229"
+    },
+    "0x45826c": {
+      "implementation": "actor_core::tick_attached_gatewarp",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 107,
+      "instruction_sha256": "310f966e844fed6f48851e50bd8ad7c81522b661778d254dd0ca7c5a29abf0bf"
+    },
+    "0x4583cd": {
+      "implementation": "actor_core::tick_attached_gatewarp",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 107,
+      "instruction_sha256": "6bae1c749f53e00460b6e2579e587b857a08c33ad621899d6ea61f6c5ff39df2"
+    },
+    "0x458691": {
+      "implementation": "actor_core::tick_screen_gatewarp",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 117,
+      "instruction_sha256": "f981153a65ef0fadac83d30c0cace6ea3c48a5396718061ce3f4e84c0d570117"
+    },
+    "0x4588ee": {
+      "implementation": "actor_core::tick_gatewarp_timeline",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 141,
+      "instruction_sha256": "cc63a48e4754dd139943bb9ec6c91859db369e9925cbb039f4a2031d660385e7"
+    },
+    "0x45852e": {
+      "implementation": "actor_core::spawn_attached_gatewarp_group",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 81,
+      "instruction_sha256": "02ec8d6a77a52a0a51b8473318ece9dbfcd5882f13b8950d51b949a85cd57206"
+    },
+    "0x458b79": {
+      "implementation": "actor_core::spawn_screen_gatewarp",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 114,
+      "instruction_sha256": "09af59346bfe3572fb49c193cbad8fa739eae999ee63c860b11e0385f0d738aa"
+    },
+    "0x45dd8b": {
+      "implementation": "actor_core::collect_status_mask",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 47,
+      "instruction_sha256": "35c405ad13317bd3a817498d5cfb4efe1e10680feca8eb22b2f00327554ef3ed"
+    },
+    "0x45de29": {
+      "implementation": "actor_core::status_gate_allows",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 69,
+      "instruction_sha256": "c963f0b4a8fe680be6f81aa20fbfb72194b7127b9f91f1d07bd667f62df1fcbc"
+    },
+    "0x460deb": {
+      "implementation": "actor_core::probe_save_slot",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 29,
+      "instruction_sha256": "a1aff62037d22237bace59d72432b01a385c9b8597cf45d90e03f770fdbadf9d"
+    },
+    "0x460e35": {
+      "implementation": "actor_core::refresh_save_slot_presence",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 18,
+      "instruction_sha256": "430e4c19bab886c3f82eb3d828d939959bd6c33de365f2a17c698963ab268213"
+    },
+    "0x4616e2": {
+      "implementation": "actor_core::release_cim_blob",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 16,
+      "instruction_sha256": "8bdb3b70e1a17517f5f4cff663c50ddaced5282376b6bb9ac2e288ade417b869"
+    },
+    "0x45dc18": {
+      "implementation": "actor_core::overlay_sprite_blit",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 30,
+      "instruction_sha256": "568ef8136d73a2c0f866306a1b4fd1559a640644298f96a9f4b9c898cebe1313"
+    },
+    "0x45e167": {
+      "implementation": "actor_core::build_shop_item_list",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 23,
+      "instruction_sha256": "6617f53a69455d535fea6f200318b1372dc585a131a159ee7788a3867bcf6d27"
+    },
+    "0x45e1a1": {
+      "implementation": "actor_core::build_owned_item_list",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 23,
+      "instruction_sha256": "18b7e85d93c0082558f5306b6e5e3df6bdecb2c3df607f88bd370ca66a583737"
+    },
+    "0x45e1dc": {
+      "implementation": "actor_core::sum_selected_item_values",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 30,
+      "instruction_sha256": "cdd5c30ea1161fac7e445871efda365630bfedacc6d1155e99ba2a56b82e34f4"
+    },
+    "0x45efb6": {
+      "implementation": "actor_core::restore_character_snapshot",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 48,
+      "instruction_sha256": "5101fccd81cfdb1629cf4d5a11d5ec45498151772c6525a8b26df0d9504c5981"
+    },
+    "0x45f07e": {
+      "implementation": "a_actors_bridge.cpp (snapshot, map hook, restore)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 26,
+      "instruction_sha256": "7acfed7699b9da031dd2aa3c2d8935ae95276f002c7a89d63ed506a077e9d670"
+    },
+    "0x45c110": {
+      "implementation": "actor_core::tick_passive_actor",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 25,
+      "instruction_sha256": "97e4671d6179cbfe7c6261ea2c1a7a76b0d238f46d844368e7dd80a5eddf39c2"
+    },
+    "0x430be4": {
+      "implementation": "a_actors_bridge.cpp (restore or walk back through 42ff9b/430059/4303e5/430e02)",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 65,
+      "instruction_sha256": "a2ef9b8c0b53cadc288488272eafaf978643cb12f58b7f204ecf16bf0dca719e"
+    },
+    "0x430d8c": {
+      "implementation": "Actors::start_walk",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 40,
+      "instruction_sha256": "9791b0f1245246a9546cb3fb9d2407cbada992ef9e7fcde442ac6d1bed42a298"
+    },
+    "0x45802f": {
+      "implementation": "Actors::spawn_effect",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 58,
+      "instruction_sha256": "c26eb69c1aa3690588b9f23d221c901b1ef40c139de96960506df36b461a226e"
+    },
+    "0x43156e": {
+      "implementation": "Dialogue::spawn_markup",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 44,
+      "instruction_sha256": "ce20e3e6fea2c9e6b815be96838267388fd7c6e297267677ceea1968423f4366"
+    },
+    "0x45b8a0": {
+      "implementation": "Actors::tick_npc",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 410,
+      "instruction_sha256": "df3092169186fe8bbe5a1da517d6400cc737ebc4a54aff3608617eed2567e8f5"
+    },
+    "0x45c063": {
+      "implementation": "actor_core::tick_entrance_dive",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 52,
+      "instruction_sha256": "4b377f1b40e30da4e248bb16d13079d6667eb5519710047cfcdd00eea2aa67ee"
+    },
+    "0x45d208": {
+      "implementation": "actor_core::tick_oscillation",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 105,
+      "instruction_sha256": "73d429955c144ee64f99147672316d956c782bd0e941643ef328a9812a68e421"
+    },
+    "0x45befc": {
+      "implementation": "actor_core::tick_scripted_path",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 108,
+      "instruction_sha256": "a76712effc9778bd505b2f94a9bad544799f73d079ae22ba0d6fd81a83c26e05"
+    },
+    "0x496fe8": {
+      "implementation": "map_logic::EventFlags::set",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x49700e": {
+      "implementation": "map_logic::EventFlags::clear",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x497036": {
+      "implementation": "map_logic::EventFlags::test",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x497065": {
+      "implementation": "Map::apply_patch",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x49711f": {
+      "implementation": "map_logic::resync_map_patches",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x486b8c": {
+      "implementation": "map_logic::MapObjects::clear_entry_on_event",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x486bfe": {
+      "implementation": "map_logic::MapObjects::stop_running_on_event",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x486c6f": {
+      "implementation": "map_logic::MapObjects::tick_patch_toggle",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x486cf9": {
+      "implementation": "map_logic::MapObjects::tick_patch_open",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x486d71": {
+      "implementation": "map_logic::MapObjects::tick_patch_close",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x486dfb": {
+      "implementation": "map_logic::MapObjects::tick_patch_trigger",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x488631": {
+      "implementation": "map_logic::MapObjects::tick_platform_lower_track",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x4886b4": {
+      "implementation": "map_logic::MapObjects::tick_platform_upper_track",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x487122": {
+      "implementation": "map_logic::MapObjects::tick_block_switch",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x493a26": {
+      "implementation": "map_logic::MapObjects::tick_falling_floor",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Field::tick_overlays"
+    },
+    "0x4870e2": {
+      "implementation": "map_logic::MapObjects::set_step_target",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x486b53": {
+      "implementation": "map_logic::MapObjects::restore_active_party_vitals",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48752d": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x487fa2": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x488543": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x488583": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4885ec": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x488902": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48893d": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48928d": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x489452": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48968a": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4896ca": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x489702": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x489f13": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x489f4e": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x489f89": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x489fc1": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48a120": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48a1aa": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48a7da": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48aa08": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48ab3b": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48ac68": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48ad54": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48b929": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48b9fd": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48beef": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48bf97": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48c1a8": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48c27a": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48c2b5": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48cbe9": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48cc24": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d274": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d40b": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d53e": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d5e0": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d6b4": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d81b": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d916": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48d9ea": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48db51": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48dc43": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48dd11": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48e3fd": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48e530": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48ed2c": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48ee5f": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48f894": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x48f968": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4900c6": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x49072d": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x490801": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4908d2": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x490a05": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x490a42": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x491259": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4912fe": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x491a09": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x491aae": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x491be8": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x491d54": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x491d8f": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x492665": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x492985": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x492ab7": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x492f74": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x49335d": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4934ca": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4935a5": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x493682": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4937bb": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4937f6": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x493984": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x493f23": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4940a1": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4943ff": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4944d8": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x49457a": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x494743": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4967c6": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x49692a": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496965": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x4969a0": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496a10": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496a4b": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496a8b": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496ac6": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496b33": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496b73": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496bae": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496bef": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496c2a": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496c67": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496ca7": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496ce2": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496dac": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496df0": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496e30": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496e6b": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496ea8": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496ee3": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496f23": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496f63": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x496fa3": {
+      "implementation": "map_logic::install_map_overlays",
+      "table": "src/map_logic/map_setup_tables.inc",
+      "bridge": "c_maps_installer_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "direct_product_path": "Map::setup_field_overlays"
+    },
+    "0x45c3a9": {
+      "implementation": "actor_core::tick_grid_cursor",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 121,
+      "instruction_sha256": "d2c310ac490278bbe36791b4977b2955e89c16394c2e6c70178d6bdfe601935f"
+    },
+    "0x45dcc8": {
+      "implementation": "actor_core::capture_transition_surface",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 74,
+      "instruction_sha256": "1554e47fe4beb22d1b0f1b90b3086d8ef80f86d4bc772104d9bd889ad8bd783e"
+    },
+    "0x461549": {
+      "implementation": "actor_core::serialize_cim_blob",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 125,
+      "instruction_sha256": "2c07320940c7024c4b2ac3d742aa305171211b5b8171e9f52b94dd6f5ac2ec77"
+    },
+    "0x461712": {
+      "implementation": "actor_core::deserialize_cim_blob",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 109,
+      "instruction_sha256": "43db3f1606e6882de47ce8b6970da9372c4bbf8b8eba6ab09425c1c59efa2250"
+    },
+    "0x45e231": {
+      "implementation": "actor_core::draw_item_menu_rows",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 134,
+      "instruction_sha256": "74913f5b6f7eca5d204806f4b55bfba9f188c5c786fe0bea2ee1a1375947eabb"
+    },
+    "0x45e421": {
+      "implementation": "actor_core::draw_equip_stat_arrows",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 135,
+      "instruction_sha256": "b0581342ba08e23f64f0faca11f59ac5435e507eb9e01ccf2370535adfd8920a"
+    },
+    "0x45c14f": {
+      "implementation": "actor_core::tick_player_command",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 170,
+      "instruction_sha256": "1f18f963886bfe6726a11b06ae19d0a21128e64790cc0b7480304d1e6d076105"
+    },
+    "0x45d395": {
+      "implementation": "actor_core::probe_adjacent_trigger",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 226,
+      "instruction_sha256": "d61c9935e54eb2d362ecc83c3bb99337d8e76d58fffc6ea35f7c5e957508d559"
+    },
+    "0x44e500": {
+      "implementation": "combat::Status::roll_status",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4644d3": {
+      "implementation": "combat::Status::scene_track",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452168": {
+      "implementation": "combat::Ai::rasterize_regions",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452255": {
+      "implementation": "combat::Ai::rasterize_regions",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44de92": {
+      "implementation": "combat::Status::award_party_experience",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452b60": {
+      "implementation": "combat::Ai::build_skill_list",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4520a0": {
+      "implementation": "combat::Ai::register_scan_regions",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x451f0d": {
+      "implementation": "combat::Ai::build_movement_overlay",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x462150": {
+      "implementation": "combat::Flow::frame_view",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x462203": {
+      "implementation": "combat::Flow::frame_view",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452d02": {
+      "implementation": "combat::Ai::crowding_near",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452db8": {
+      "implementation": "combat::Ai::crowding_wide",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x45316e": {
+      "implementation": "combat::Ai::press_weakened_enemies",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44a513": {
+      "implementation": "combat::Grid::take_random_placement",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x452497": {
+      "implementation": "combat::Ai::collect_reaching_candidates",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4525e0": {
+      "implementation": "combat::Ai::collect_region_candidates",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x448b4c": {
+      "implementation": "combat::Grid::try_random_encounter",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44df90": {
+      "implementation": "combat::Flow::leave_battle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x44ab62": {
+      "implementation": "combat::Flow::leave_battle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x462de2": {
+      "implementation": "combat::ObjectMotion::home_toward_target",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464c27": {
+      "implementation": "combat::Effects::spawn_scripted",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464cf4": {
+      "implementation": "combat::Effects::spawn_notifying",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464c05": {
+      "implementation": "combat::Effects::retire_when_finished",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464d2f": {
+      "implementation": "combat::Effects::notify_and_retire",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46521e": {
+      "implementation": "combat::Effects::rise_then_retire",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465b66": {
+      "implementation": "combat::Effects::attach_to",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4665ca": {
+      "implementation": "combat::Effects::attach_to",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466a98": {
+      "implementation": "combat::Effects::attach_to",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4660a3": {
+      "implementation": "combat::Effects::attach_to_drifting",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465241": {
+      "implementation": "combat::Effects::spawn_hit_spark",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4653d9": {
+      "implementation": "combat::Effects::spawn_phase_finish",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4653a5": {
+      "implementation": "combat::Effects::notify_anchor_and_retire",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46686d": {
+      "implementation": "combat::Effects::retire_when_gate_open",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466cc9": {
+      "implementation": "combat::Effects::shrink_then_retire",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465dc2": {
+      "implementation": "combat::Effects::flicker_then_retire",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46265d": {
+      "implementation": "combat::Effects::sway_then_retire",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465b14": {
+      "implementation": "combat::Effects::emit_debris",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465abd": {
+      "implementation": "combat::Effects::spawn_debris_particle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46532a": {
+      "implementation": "combat::Effects::spawn_falling_strikes",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46528d": {
+      "implementation": "combat::Effects::fall_and_strike",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466015": {
+      "implementation": "combat::Effects::sequence_explosions",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4874a7": {
+      "implementation": "map_logic::MapObjects::tick_map_marker",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4897a3": {
+      "implementation": "map_logic::MapObjects::tick_pushable",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489a60": {
+      "implementation": "map_logic::MapObjects::tick_gate_front_piece",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489b53": {
+      "implementation": "map_logic::MapObjects::tick_gate_back_piece",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48897a": {
+      "implementation": "map_logic::MapObjects::tick_conveyor_rider",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x488aa7": {
+      "implementation": "map_logic::MapObjects::tick_conveyor_shadow",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4870c6": {
+      "implementation": "map_logic::MapObjects::trigger_position_event",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x435fac": {
+      "implementation": "map_logic::Worldmap::set_destination",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x435fca": {
+      "implementation": "map_logic::Worldmap::set_script_toggle",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x435ffa": {
+      "implementation": "map_logic::Worldmap::set_display_state",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x436060": {
+      "implementation": "map_logic::Worldmap::force_endpoint_label",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x436077": {
+      "implementation": "map_logic::Worldmap::endpoint_is_present",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4360be": {
+      "implementation": "map_logic::Worldmap::enter_from",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x436100": {
+      "implementation": "map_logic::Worldmap::select_effect_mode",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x43611c": {
+      "implementation": "map_logic::Worldmap::route_cue",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x43700a": {
+      "implementation": "map_logic::Worldmap::clear_visited",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4384a0": {
+      "implementation": "c_maps_bridge.cpp (the original body is a bare return)",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dca5": {
+      "implementation": "DirectionalHitParticles::tick",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d904": {
+      "implementation": "DirectionalHitParticles::spawn_hit",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dcd7": {
+      "implementation": "DirectionalHitParticles::spawn_double_hit",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46f684": {
+      "implementation": "DirectionalHitParticles::spawn_high_hit",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46f92f": {
+      "implementation": "DirectionalHitParticles::spawn_flat_cue",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a8e9": {
+      "implementation": "DirectionalHitParticles::spawn_slow_arc_hit",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46b772": {
+      "implementation": "DirectionalHitParticles::spawn_fast_arc_trigger_hit",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e344": {
+      "implementation": "DirectionalHitParticles::spawn_deferred_trigger",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e8b3": {
+      "implementation": "DirectionalHitParticles::spawn_facing_deferred_trigger",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x470b90": {
+      "implementation": "DirectionalHitParticles::spawn_poison_liquid",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x468790": {
+      "implementation": "Projectiles::tick",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4687f3": {
+      "implementation": "Projectiles::launch",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46bd92": {
+      "implementation": "Projectiles::launch_arc",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47c807": {
+      "implementation": "Projectiles::launch_directional",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46a1b6": {
+      "implementation": "AnimatedParticle::tick",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x467db3": {
+      "implementation": "DriftEffect::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4681d6": {
+      "implementation": "DebrisEffect::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4860ff": {
+      "implementation": "RisingEffect::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x481b11": {
+      "implementation": "FinishingEffects::release_after_twenty_ticks",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dfc3": {
+      "implementation": "FinishingEffects::release_when_script_ends",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46c5bb": {
+      "implementation": "FinishingEffects::travel_then_release",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4719e2": {
+      "implementation": "FinishingEffects::drift_until_script_ends",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4705c6": {
+      "implementation": "FinishingEffects::report_hit_when_script_ends",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x478c12": {
+      "implementation": "FinishingEffects::report_actor_done_when_script_ends",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x485c52": {
+      "implementation": "FinishingEffects::report_owner_hit_when_script_ends",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47eb35": {
+      "implementation": "FinishingEffects::travel_then_report_done",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4727b4": {
+      "implementation": "FinishingEffects::report_ready_when_script_ends",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x482bd8": {
+      "implementation": "FinishingEffects::scatter_drift_when_script_ends",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4682cc": {
+      "implementation": "FinishingEffects::drop_then_scatter_debris",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48613c": {
+      "implementation": "FinishingEffects::fall_then_raise_successor",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4692c6": {
+      "implementation": "FinishingEffects::stop_screen_shake",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4120c7": {
+      "implementation": "EventActivation::spawn_object",
+      "bridge": "native_event_activation.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x412147": {
+      "implementation": "EventActivation::spawn_player_dialog",
+      "bridge": "native_event_activation.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4138ee": {
+      "implementation": "EventActivation::resume_pending",
+      "bridge": "native_event_activation.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x465f7e": {
+      "implementation": "combat::Effects::spawn_explosion_burst",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46688c": {
+      "implementation": "combat::Effects::spawn_ground_burst",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46691c": {
+      "implementation": "combat::Effects::spawn_large_ground_burst",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466cfc": {
+      "implementation": "combat::Effects::spawn_swirl_particle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46648b": {
+      "implementation": "combat::Effects::spawn_fountain_particle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465e0b": {
+      "implementation": "combat::Effects::spawn_spark_cluster",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466df3": {
+      "implementation": "combat::Effects::spawn_swirl_cluster",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465ee1": {
+      "implementation": "combat::Effects::grow_explosion",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466da7": {
+      "implementation": "combat::Effects::drift_swirl_particle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466545": {
+      "implementation": "combat::Effects::emit_fountain",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466992": {
+      "implementation": "combat::Effects::sequence_ground_bursts",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46596b": {
+      "implementation": "combat::Effects::fly_debris",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466309": {
+      "implementation": "combat::Effects::arc_fountain_particle",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x467040": {
+      "implementation": "combat::Effects::spawn_orbit_cluster",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466ed1": {
+      "implementation": "combat::Effects::orbit_spark",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4657d7": {
+      "implementation": "combat::Effects::spawn_beam",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46562e": {
+      "implementation": "combat::Effects::tick_beam_charge",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46570a": {
+      "implementation": "combat::Effects::tick_beam_core",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4645e7": {
+      "implementation": "combat::Effects::step_floating_number",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464512": {
+      "implementation": "combat::Effects::tick_floating_digit",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46474d": {
+      "implementation": "combat::Effects::tick_floating_digit_alt",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464a9d": {
+      "implementation": "combat::Effects::step_floating_number",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4646be": {
+      "implementation": "combat::Effects::spawn_floating_number",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464b74": {
+      "implementation": "combat::Effects::spawn_floating_number",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4647ad": {
+      "implementation": "combat::Effects::spawn_glyph_number",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x464925": {
+      "implementation": "combat::Effects::spawn_glyph_number",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4658de": {
+      "implementation": "combat::Actions::run_beam",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x465b7d": {
+      "implementation": "combat::Actions::run_target_effects",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4660c4": {
+      "implementation": "combat::Actions::run_target_effects",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x466aaf": {
+      "implementation": "combat::Actions::run_target_effects",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x4665e1": {
+      "implementation": "combat::Actions::run_target_effects",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x467111": {
+      "implementation": "combat::Actions::run_orbit",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "worker": "B_COMBAT"
+    },
+    "0x46018b": {
+      "implementation": "actor_core::advance_map_transition",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 234,
+      "instruction_sha256": "89bf375042de76b61b94f9463cf3eb0bee1f872e1a86bed1d4a03c6922c7e221"
+    },
+    "0x45abf9": {
+      "implementation": "actor_core::tick_jump_motion",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 706,
+      "instruction_sha256": "ff212e72ddcd794ef894d243c852cc5f1b65ca596883b619fa89e20b758f2ea1"
+    },
+    "0x460e58": {
+      "implementation": "actor_core::write_save_slot",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 290,
+      "instruction_sha256": "a6976e02fbec3ef0d711dc2d00abe6693b24d4ac755c964d00cff680d4ef7a93"
+    },
+    "0x46118e": {
+      "implementation": "actor_core::load_save_slot",
+      "bridge": "a_actors_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers",
+      "owner": "A_ACTORS",
+      "source_instructions": 315,
+      "instruction_sha256": "11e1c14ba1223a1acdc0b30d63a322a7ebf380f149643daad71df983464b2795"
+    },
+    "0x493e8e": {
+      "implementation": "map_logic::MapObjects::tick_patch_and_gate",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48bd7d": {
+      "implementation": "map_logic::MapObjects::tick_patch_and_gate",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x491b53": {
+      "implementation": "map_logic::MapObjects::tick_patch_and_gate",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x494066": {
+      "implementation": "map_logic::MapObjects::tick_patch_toggle_pair",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x49356f": {
+      "implementation": "map_logic::MapObjects::tick_event_flag_toggle",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48bea6": {
+      "implementation": "map_logic::MapObjects::tick_gated_patch_claim",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48c256": {
+      "implementation": "Map::apply_patch + map_logic::MapObjects::seed_tile_animation",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x491d2b": {
+      "implementation": "Map::apply_patch + map_logic::MapObjects::seed_tile_animation",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x496650": {
+      "implementation": "Map::apply_patch + map_logic::MapObjects::seed_tile_animation",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x49667f": {
+      "implementation": "Map::apply_patch + map_logic::MapObjects::seed_tile_animation",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x492a85": {
+      "implementation": "map_logic::MapObjects::release_pending_event_entry",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x494352": {
+      "implementation": "map_logic::MapObjects::arm_switch_hold",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x438493": {
+      "implementation": "c_maps_bridge.cpp (two stores and a return)",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4898d3": {
+      "implementation": "map_logic::MapObjects::spawn_pushable",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x488bb6": {
+      "implementation": "map_logic::MapObjects::spawn_conveyor_pair",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489c47": {
+      "implementation": "map_logic::MapObjects::spawn_gate_pair",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48880e": {
+      "implementation": "map_logic::MapObjects::spawn_platform_pair",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489929": {
+      "implementation": "map_logic::MapObjects::spawn_switch",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4899f6": {
+      "implementation": "map_logic::MapObjects::spawn_switch_range",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489a18": {
+      "implementation": "map_logic::MapObjects::spawn_switch_range",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489a3c": {
+      "implementation": "map_logic::MapObjects::spawn_switch_range",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489d3c": {
+      "implementation": "map_logic::MapObjects::install_gate_crossing",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489e7f": {
+      "implementation": "map_logic::MapObjects::install_gate_crossing",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489ed7": {
+      "implementation": "map_logic::MapObjects::install_gate_crossing",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x489ef5": {
+      "implementation": "map_logic::MapObjects::install_gate_crossing",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x488737": {
+      "implementation": "map_logic::MapObjects::tick_platform",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x48745b": {
+      "implementation": "map_logic::MapObjects::tick_chest_timer",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4874df": {
+      "implementation": "map_logic::MapObjects::spawn_marker",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x486eb7": {
+      "implementation": "map_logic::MapObjects::clear_region_animation",
+      "bridge": "c_maps_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46dfdf": {
+      "implementation": "TrailSprite::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4692e5": {
+      "implementation": "FinishingEffects::directional_expand_impact",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46d24c": {
+      "implementation": "FinishingEffects::projectile_impact",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ed0e": {
+      "implementation": "FinishingEffects::particle_impact",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46f1f6": {
+      "implementation": "FinishingEffects::dual_notify_impact",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47fcb7": {
+      "implementation": "FinishingEffects::homing_impact",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47f526": {
+      "implementation": "FinishingEffects::homing_impact_with_cue",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47dc33": {
+      "implementation": "FinishingEffects::homing_impact_on_first_target",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x483380": {
+      "implementation": "FinishingEffects::homing_impact_on_link",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4823e1": {
+      "implementation": "FinishingEffects::homing_impact_on_link_with_cue",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x484f62": {
+      "implementation": "FinishingEffects::homing_impact_after_delay",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46e013": {
+      "implementation": "FinishingEffects::directional_trail_impact",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4837df": {
+      "implementation": "FinishingEffects::arc_projectile_impact",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47219f": {
+      "implementation": "FinishingEffects::rising_sprite_notify",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47be07": {
+      "implementation": "TargetFanoutSequence::recover_targets",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x485ccf": {
+      "implementation": "TargetFanoutSequence::shared_status_buff",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x47bde6": {
+      "implementation": "RecoverTargetChild::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x485c80": {
+      "implementation": "StatusBuffChild::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x467be6": {
+      "implementation": "TargetFanoutSequence::all_target_lift_numbers",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46fffd": {
+      "implementation": "TargetFanoutSequence::descending_particle_burst",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x467bcf": {
+      "implementation": "LiftNumberChild::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ff7a": {
+      "implementation": "DescendingBurst::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46ff40": {
+      "implementation": "DescendingBurst::tick",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x483179": {
+      "implementation": "TargetFanoutSequence::single_target_particle_attack",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x482f4d": {
+      "implementation": "TargetFanoutSequence::multitarget_particle_attack",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4693ef": {
+      "implementation": "TargetFanoutSequence::first_target_directional_burst",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x469321": {
+      "implementation": "DirectionalHitParticles::spawn_directional_expand",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x467ed6": {
+      "implementation": "TargetFanoutSequence::target_flash_drift",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x467e8c": {
+      "implementation": "TargetFlashNotify::spawn",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x467e47": {
+      "implementation": "TargetFlashNotify::tick",
+      "bridge": "effect_objects_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461854": {
+      "implementation": "combat::HandlerLifecycle::start_player",
+      "bridge": "native_handler_lifecycle.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461903": {
+      "implementation": "combat::HandlerLifecycle::start_enemy",
+      "bridge": "native_handler_lifecycle.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46196c": {
+      "implementation": "combat::HandlerLifecycle::tick_status_delta",
+      "bridge": "native_handler_lifecycle.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461a4f": {
+      "implementation": "combat::HandlerLifecycle::queue_status_delta",
+      "bridge": "native_handler_lifecycle.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461a91": {
+      "implementation": "combat::HandlerLifecycle::poll_completion",
+      "bridge": "native_handler_lifecycle.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44e085": {
+      "implementation": "combat::Flow::restore_after_handler",
+      "bridge": "b_combat_bridge.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4622c2": {
+      "implementation": "combat::AttachedEffects::attach",
+      "bridge": "native_attached_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x462370": {
+      "implementation": "combat::AttachedEffects::detach",
+      "bridge": "native_attached_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4623dd": {
+      "implementation": "combat::AttachedEffects::clear_owner",
+      "bridge": "native_attached_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x462452": {
+      "implementation": "combat::AttachedEffects::clear_all",
+      "bridge": "native_attached_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461b11": {
+      "implementation": "combat::Followup::enqueue_wave",
+      "bridge": "native_followup.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461d82": {
+      "implementation": "combat::Followup::prepare",
+      "bridge": "native_followup.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44ceb2": {
+      "implementation": "combat::TurnControl::has_adjacent_enemy",
+      "bridge": "native_turn_control.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44cfe2": {
+      "implementation": "combat::TurnControl::begin_action",
+      "bridge": "native_turn_control.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44d17b": {
+      "implementation": "combat::TurnControl::activate_context",
+      "bridge": "native_turn_control.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x461c66": {
+      "implementation": "combat::TurnControl::tick_defeated_enemy",
+      "bridge": "native_turn_control.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44d45a": {
+      "implementation": "combat::Engine::tick",
+      "bridge": "native_battle_engine.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44c1fc": {
+      "implementation": "combat::Entrance::activate_enemy",
+      "bridge": "native_entrance.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44c2f4": {
+      "implementation": "combat::Markers::release_slot",
+      "bridge": "native_entrance.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44c313": {
+      "implementation": "combat::Markers::tick",
+      "bridge": "native_entrance.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44c337": {
+      "implementation": "combat::Markers::spawn",
+      "bridge": "native_entrance.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44c3b6": {
+      "implementation": "combat::Entrance::tick",
+      "bridge": "native_entrance.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x44c954": {
+      "implementation": "combat::StatusVisuals::remove_expired",
+      "bridge": "native_entrance.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4624ad": {
+      "implementation": "combat::AnchorEffects::tick_exploding_mark",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46256a": {
+      "implementation": "combat::AnchorEffects::emit_floating_marks",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4626ab": {
+      "implementation": "combat::AnchorEffects::spawn_rising",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x46274d": {
+      "implementation": "combat::AnchorEffects::emit_rising",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4629cb": {
+      "implementation": "combat::AnchorEffects::tick_orbit",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x462a49": {
+      "implementation": "combat::AnchorEffects::orbit_ring",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x462b50": {
+      "implementation": "combat::AnchorEffects::orbit_ring",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4627eb": {
+      "implementation": "combat::AnchorEffects::scatter_cluster",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x462c06": {
+      "implementation": "combat::AnchorEffects::spiral",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x462cf4": {
+      "implementation": "combat::AnchorEffects::spiral",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4631a2": {
+      "implementation": "combat::ObjectMotion::polar_step",
+      "bridge": "native_anchor_effects.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x462f5b": {
+      "implementation": "combat::ObjectMotion::distance_to_target",
+      "bridge": "native_target_geometry.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x463038": {
+      "implementation": "combat::ObjectMotion::heading_to_target",
+      "bridge": "native_target_geometry.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    },
+    "0x4630ed": {
+      "implementation": "combat::ObjectMotion::heading_to_target",
+      "bridge": "native_target_geometry.cpp",
+      "stage": "native_logic_with_legacy_callers"
+    }
+  }
+}

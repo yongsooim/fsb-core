@@ -1,0 +1,12 @@
+{
+  "entries": {
+    "0x413da7": {
+      "implementation": "DialogTemplates::expand_static",
+      "bridge": "native_dialog_templates.cpp",
+      "dispatcher": "dispatch_static_dialog_template",
+      "selection": "reference/dialog-template-rows.json",
+      "stage": "partial_native_with_explicit_legacy_remainder",
+      "selection_cpp": "src/dialog_template_rows.inc"
+    }
+  }
+}

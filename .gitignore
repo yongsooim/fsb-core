@@ -1,0 +1,14 @@
+# Build outputs
+build/
+build-*/
+.build-host/
+*.o
+*.a
+
+# Agent worktrees and session state; each worktree is a full checkout.
+.claude/
+
+# Local Finder metadata and Python bytecode caches
+.DS_Store
+__pycache__/
+*.py[cod]

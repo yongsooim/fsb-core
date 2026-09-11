@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flying Super Board</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;color:#bbb;font:13px/1.5 system-ui,sans-serif}
+  body{display:flex}
+  /* Everything that is not the game lives here, so the frame the engine drew is
+     the only thing in the play area. */
+  #panel{flex:0 0 15em;display:flex;flex-direction:column;gap:12px;
+         padding:16px;box-sizing:border-box;background:#0c0c0e;border-right:1px solid #23232a;overflow:auto}
+  #panel h1{margin:0;font-size:14px;font-weight:600;color:#e6e6e6;letter-spacing:.02em}
+  #status{min-height:3em;color:#9a9aa2}
+  #speed{color:#e8c46a}
+  #keys{margin:auto 0 0;padding-top:12px;border-top:1px solid #1c1c22;color:#75757e}
+  #keys div{display:flex;justify-content:space-between;gap:10px}
+  #keys b{color:#a8a8b2;font-weight:600}
+  button{font:inherit;padding:8px 18px}
+  /* The engine presents a fixed 800x600; the element stretches to whatever the
+     window offers and object-fit keeps that4:3 frame whole inside it. */
+  #stage{flex:1;min-width:0;display:flex}
+  canvas{width:100%;height:100%;object-fit:contain;background:#000}
+</style>
+
+<aside id="panel">
+  <h1>Flying Super Board</h1>
+  <button id="start" hidden>시작</button>
+  <div id="status">자산을 불러오는 중…</div>
+  <div id="speed"></div>
+  <div id="keys">
+    <div><span>이동·선택</span><b>방향키</b></div>
+    <div><span>확인</span><b>Enter</b></div>
+    <div><span>취소·메뉴</span><b>Esc</b></div>
+    <div><span>빨리감기</span><b>` 누르는 동안</b></div>
+  </div>
+</aside>
+<main id="stage"><canvas id="screen" width="800" height="600"></canvas></main>
+
+<script>
+// tools/web/package_deploy.py rewrites this line for a deployment: the asset
+// packages it split and the manifest of the sound it re-encoded. A development
+// build embeds the assets in the module and leaves both empty, and asking a
+// static host for files that were never generated only logs 404s.
+const PACKAGES = [], AUDIO_MANIFEST = null;
+
+const canvas = document.getElementById('screen');
+const context = canvas.getContext('2d', { alpha: false });
+const status = document.getElementById('status');
+let image = null;
+
+// The host hands us the RGBA buffer it just produced. Copying out of the wasm
+// heap is required: the view dies whenever the heap grows.
+window.fsbPresent = (pointer, width, height) => {
+  if (!image || image.width !== width || image.height !== height) {
+    canvas.width = width; canvas.height = height;
+    image = context.createImageData(width, height);
+  }
+  image.data.set(Module.HEAPU8.subarray(pointer, pointer + width * height * 4));
+  context.putImageData(image, 0, 0);
+};
+
+// Audio. The engine does not hand over samples: it hands over the commands its
+// voices are given — load, play, stop, volume, loop — and the worklet holds the
+// PCM and mixes them on the device clock. Playback therefore follows real time
+// whatever the game clock is doing. See tools/web/audio-worklet.js.
+let audioPort = null;
+const audioQueue = []; // Commands issued before the device exists.
+function toDevice(message, transfer) {
+  if (audioPort) audioPort.postMessage(message, transfer || []);
+  else audioQueue.push([message, transfer || []]);
+}
+window.fsbVoiceGain = (pointer, count) => {
+  const gain = new Uint32Array(count);
+  gain.set(new Uint32Array(Module.HEAPU32.buffer, pointer, count));
+  toDevice({ type: 'gain', gain }, [gain.buffer]);
+};
+window.fsbVoiceReset = () => toDevice({ type: 'reset' });
+// Thirteen doubles rather than thirteen arguments: one pointer crosses, and
+// the layout is the one the host writes in event0_web.cpp.
+window.fsbVoice = pointer => {
+  const field = Module.HEAPF64.subarray(pointer / 8, pointer / 8 + 13);
+  const message = { kind: field[0], slot: field[1], handle: field[2], volume: field[3],
+                    loop: !!field[4], playing: !!field[5], phase: field[6], key: field[7],
+                    rate: field[8], channels: field[9], frames: field[10] };
+  const transfer = [];
+  if (field[11]) {
+    // Copy out of the wasm heap: the view dies whenever the heap grows, and
+    // the copy is transferred to the audio thread rather than cloned.
+    const samples = new Int16Array(field[12]);
+    samples.set(new Int16Array(Module.HEAP16.buffer, field[11], field[12]));
+    message.samples = samples;
+    transfer.push(samples.buffer);
+  }
+  toDevice(message, transfer);
+};
+
+let audioReport = { voices: 0, silentFrames: 0 };
+async function startAudio() {
+  const context = new (window.AudioContext || window.webkitAudioContext)({ sampleRate: 44100 });
+  await context.audioWorklet.addModule('audio-worklet.js');
+  const node = new AudioWorkletNode(context, 'fsb-audio', { outputChannelCount: [2] });
+  node.port.onmessage = event => { audioReport = event.data; };
+  node.connect(context.destination);
+  await context.resume();
+  audioPort = node.port;
+  for (const [message, transfer] of audioQueue.splice(0)) audioPort.postMessage(message, transfer);
+  return context;
+}
+window.fsbAudioReport = () => audioReport;
+
+var Module = {
+  print: text => console.log(text),
+  printErr: text => { console.error(text); status.textContent = text; },
+  // onRuntimeInitialized is the only signal that the .data package is mounted.
+  // monitorRunDependencies reports 0 once before the preload registers itself,
+  // so gating on it offers the start button about 60ms in, three seconds before
+  // there is an FLYINGSB.EXE to open.
+  onRuntimeInitialized: () => {
+    window.fsbReady = true;
+    document.getElementById('start').hidden = false;
+    status.textContent = '시작을 누르세요 (오디오는 사용자 조작 이후에만 시작됩니다)';
+  },
+  monitorRunDependencies: remaining => {
+    if (remaining > 0) status.textContent = `자산을 불러오는 중… (${remaining})`;
+  },
+};
+
+window.fsbFailed = text => { status.textContent = text; console.error(text); };
+
+// Holding the backtick key runs the engine at 16x. The host reports the rate it
+// switched to, because a hold with no visible sign is indistinguishable from a
+// key the page ignored.
+window.fsbSpeed = speed => { document.getElementById('speed').textContent = speed > 1 ? `${speed}배속` : ''; };
+
+// The engine reads its sound as the original 8-bit PCM, which is 104 MiB of a
+// full asset tree and barely compresses. A deployment can ship Opus instead and
+// hand the engine back the WAV it expects: the browser owns a codec, so the
+// decode costs nothing to download. Builds that embed the WAVs have no
+// manifest and skip all of this.
+let mounted = [];
+async function mountAudio() {
+  if (!AUDIO_MANIFEST) return;
+  const manifest = await (await fetch(AUDIO_MANIFEST)).json();
+  mounted = manifest.map(entry => '/assets/' + entry.path);
+  // A package built without the WAVs has no folder to write them into.
+  for (const folder of new Set(manifest.map(entry => entry.path.split('/')[0])))
+    try { FS.mkdir('/assets/' + folder); } catch (error) { /* already mounted */ }
+  let done = 0;
+  const one = async entry => {
+    const encoded = await (await fetch(entry.opus)).arrayBuffer();
+    // Decoding at the file's own rate keeps the engine's mixer on the sample
+    // clock it had; letting the context resample would change every voice.
+    const decoded = await new OfflineAudioContext(entry.channels, 1, entry.rate).decodeAudioData(encoded);
+    FS.writeFile('/assets/' + entry.path, wave(decoded, entry));
+    status.textContent = `소리를 준비하는 중… (${++done}/${manifest.length})`;
+  };
+  // Eight at a time: enough to keep the network busy, few enough that the
+  // decoders do not fight over the main thread while the page is still blank.
+  const queue = manifest.slice();
+  await Promise.all(Array.from({ length: 8 }, async () => {
+    for (let entry = queue.pop(); entry; entry = queue.pop()) await one(entry);
+  }));
+}
+
+// Starting the engine parses every wave into its own memory, so the copies in
+// the filesystem are only needed for that one pass. Dropping them afterwards
+// gives back what they cost, which for a full asset tree is 104 MiB.
+function releaseAudio() {
+  for (const path of mounted) try { FS.unlink(path); } catch (error) { /* never mounted */ }
+  mounted = [];
+}
+
+// Rebuild the exact RIFF the engine's parser accepts: same rate, channels, bit
+// depth and frame count as the file that was encoded. A codec's output can land
+// a frame short, and padding rather than shortening keeps every completion time
+// where the original put it.
+function wave(buffer, entry) {
+  const { channels, rate, bits, frames } = entry;
+  const width = bits / 8, size = frames * channels * width;
+  const out = new Uint8Array(44 + size);
+  const view = new DataView(out.buffer);
+  const text = (at, value) => { for (let i = 0; i < value.length; i++) out[at + i] = value.charCodeAt(i); };
+  text(0, 'RIFF'); view.setUint32(4, 36 + size, true); text(8, 'WAVEfmt ');
+  view.setUint32(16, 16, true); view.setUint16(20, 1, true); view.setUint16(22, channels, true);
+  view.setUint32(24, rate, true); view.setUint32(28, rate * channels * width, true);
+  view.setUint16(32, channels * width, true); view.setUint16(34, bits, true);
+  text(36, 'data'); view.setUint32(40, size, true);
+  const silence = bits === 8 ? 128 : 0;
+  out.fill(silence, 44);
+  for (let channel = 0; channel < channels; channel++) {
+    const samples = buffer.getChannelData(Math.min(channel, buffer.numberOfChannels - 1));
+    const count = Math.min(frames, samples.length);
+    for (let frame = 0; frame < count; frame++) {
+      const value = Math.max(-1, Math.min(1, samples[frame]));
+      const at = 44 + (frame * channels + channel) * width;
+      if (bits === 8) out[at] = Math.round(value * 127) + 128;
+      else view.setInt16(at, Math.round(value * 32767), true);
+    }
+  }
+  return out;
+}
+
+document.getElementById('start').addEventListener('click', async event => {
+  event.target.hidden = true;
+  startAudio().catch(error => console.warn('audio unavailable:', error));
+  try {
+    await mountAudio();
+  } catch (error) {
+    window.fsbFailed('소리를 준비하지 못했습니다: ' + error);
+    return;
+  }
+  status.textContent = '실행 중';
+  // No ?event= means play on, the way the native launcher does. The parameter
+  // is an inspection boundary: the engine stops once that event finishes, so
+  // defaulting it to 0 froze the page at the end of the opening.
+  const requested = new URLSearchParams(location.search).get('event');
+  const through = requested === null ? -1 : Number(requested);
+  Module.ccall('fsb_start', null, ['string', 'number', 'number', 'number'],
+               ['/assets', through, canvas.width, canvas.height]);
+  releaseAudio();
+});
+
+for (const [name, active] of [['focus', 1], ['blur', 0]])
+  window.addEventListener(name, () => window.fsbReady && Module.ccall('fsb_set_active', null, ['number'], [active]));
+
+// A deployment splits the assets into packages a host will accept and lists
+// them here; a development build embeds them in the module and ships no list.
+// Each package script registers its own run dependency, so they have to be in
+// place before the module runs and onRuntimeInitialized decides everything is
+// mounted. That is why the module is loaded from here rather than a tag.
+const script = source => new Promise((resolve, reject) => {
+  const tag = document.createElement('script');
+  tag.src = source; tag.onload = resolve; tag.onerror = () => reject(new Error('cannot load ' + source));
+  document.body.appendChild(tag);
+});
+(async () => {
+  for (const name of PACKAGES) await script(name);
+  await script('fsb_event0_web.js');
+})().catch(error => window.fsbFailed(String(error)));
+</script>
