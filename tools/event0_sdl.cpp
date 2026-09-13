@@ -9,6 +9,7 @@
 #include "fsb_core/original_cheats.hpp"
 #include <ctime>
 #include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 #include <iostream>
 #include <memory>
 #include <cmath>

@@ -1,4 +1,5 @@
 #include "lab_io.hpp"
+#include <algorithm>
 #include "fsb_core/actors.hpp"
 #include "field_step.hpp"
 #include "fsb_core/map.hpp"

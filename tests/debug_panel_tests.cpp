@@ -1,4 +1,5 @@
 #include "debug_panel.hpp"
+#include <SDL3/SDL_main.h>
 #include "lab_io.hpp"
 #include <iostream>
 namespace {void check(bool ok,const char* why){if(!ok)throw std::runtime_error(why);}}

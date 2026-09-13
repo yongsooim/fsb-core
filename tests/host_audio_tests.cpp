@@ -1,4 +1,5 @@
 #include "host_audio.hpp"
+#include <SDL3/SDL_main.h>
 #include <iostream>
 using namespace fsb;
 namespace {
@@ -14,7 +15,7 @@ struct FakeNative:host::PlatformAudio {
     std::string error()const override{return "injected device failure";}
 };
 }
-int main(){
+int main(int,char**){
     try{
         // SDL3 always has the timer available; the audio subsystem is started
         // by the fallback itself when it opens a device.

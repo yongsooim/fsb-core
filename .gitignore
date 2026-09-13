@@ -4,6 +4,7 @@ build-*/
 .build-host/
 *.o
 *.a
+/vcpkg_installed/
 
 # Agent worktrees and session state; each worktree is a full checkout.
 .claude/

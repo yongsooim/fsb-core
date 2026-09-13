@@ -3,10 +3,8 @@ project(fsb_core VERSION 0.1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
-# Snapshot-vault change: this copy omits assets/ (original game data) and reference/
-# (recorded x86 comparison dumps). Contract tests replay those trees, so a test is only
-# registered when its command does not need them, or when both are present at the source
-# root. See README.md for how to link the excluded trees back in.
+# Tests requiring original game data and x86 comparison dumps are registered only
+# when both fixture directories are present at the source root.
 set(FSB_ORIGINAL_FIXTURES OFF)
 if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/assets" AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/reference")
     set(FSB_ORIGINAL_FIXTURES ON)
@@ -389,11 +387,16 @@ set_tests_properties(playback_contract PROPERTIES TIMEOUT 180)
 add_executable(fsb_presentation_tests tests/presentation_tests.cpp)
 add_executable(fsb_integer_presentation_tests tests/integer_presentation_tests.cpp)
 target_link_libraries(fsb_integer_presentation_tests PRIVATE fsb_core)
+add_executable(fsb_stretch_tests tests/stretch_tests.cpp)
+target_link_libraries(fsb_stretch_tests PRIVATE fsb_core)
 if(EMSCRIPTEN)
+    target_link_options(fsb_stretch_tests PRIVATE -sENVIRONMENT=node)
+    add_test(NAME stretch_contract COMMAND "${NODE_EXECUTABLE}" $<TARGET_FILE:fsb_stretch_tests>)
     target_link_options(fsb_integer_presentation_tests PRIVATE -sENVIRONMENT=node)
     add_test(NAME integer_presentation_contract COMMAND "${NODE_EXECUTABLE}" $<TARGET_FILE:fsb_integer_presentation_tests>)
 else()
     add_test(NAME integer_presentation_contract COMMAND fsb_integer_presentation_tests)
+    add_test(NAME stretch_contract COMMAND fsb_stretch_tests)
 endif()
 if(FSB_CORE_BUILD_TEXT_RENDERER)
     target_link_libraries(fsb_presentation_tests PRIVATE fsb_text)

@@ -16,7 +16,11 @@
 #include <immintrin.h>
 #define FSB_STRETCH_SIMD 1
 #define FSB_STRETCH_SIMD_RUNTIME_CHECK 1
+#if defined(_MSC_VER)
+#include <intrin.h>
+#else
 #define FSB_STRETCH_TARGET __attribute__((target("sse4.1")))
+#endif
 #endif
 #ifndef FSB_STRETCH_TARGET
 #define FSB_STRETCH_TARGET
@@ -70,7 +74,13 @@ FSB_STRETCH_TARGET void gather_row(std::uint8_t* out,const std::uint8_t* window,
 }
 inline bool gather_available(){
 #ifdef FSB_STRETCH_SIMD_RUNTIME_CHECK
+#if defined(_MSC_VER)
+    int registers[4];
+    __cpuid(registers,1);
+    return (registers[2]&(1<<19))!=0;
+#else
     return __builtin_cpu_supports("sse4.1");
+#endif
 #else
     return true;
 #endif

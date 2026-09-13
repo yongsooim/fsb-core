@@ -1,4 +1,5 @@
 #pragma once
+#include <algorithm>
 #include "fsb_core/runtime.hpp"
 #include "fsb_core/symbols.hpp"
 #include "field_step.hpp"

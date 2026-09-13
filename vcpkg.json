@@ -1,0 +1,5 @@
+{
+  "name": "fsb-core",
+  "version-string": "0.1.0",
+  "dependencies": ["freetype", "sdl3"]
+}

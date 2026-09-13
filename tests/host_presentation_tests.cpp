@@ -1,9 +1,10 @@
 #include "host_presentation.hpp"
+#include <SDL3/SDL_main.h>
 #include <iostream>
 #include <cstring>
 using namespace fsb::core;
 void check(bool ok){if(!ok)throw std::runtime_error(SDL_GetError());}
-int main(){try{check(SDL_Init(SDL_INIT_VIDEO));
+int main(int,char**){try{check(SDL_Init(SDL_INIT_VIDEO));
 struct Lifetime{~Lifetime(){SDL_Quit();}} lifetime;
 std::unique_ptr<SDL_Window,decltype(&SDL_DestroyWindow)> w(SDL_CreateWindow("FSB GPU contract",800,600,SDL_WINDOW_HIDDEN|SDL_WINDOW_RESIZABLE),SDL_DestroyWindow);check(bool(w));fsb::host::RendererPtr r(nullptr,SDL_DestroyRenderer);
 try{r=fsb::host::create_renderer(w.get(),false,true);}catch(const std::exception& e){std::cerr<<"GPU device unavailable: "<<e.what()<<'\n';return 77;}SDL_SetRenderVSync(r.get(),0);fsb::host::HostPresentation presenter(r.get());
