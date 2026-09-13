@@ -7,8 +7,8 @@ the substitution is written into the fixture metadata, so a group that uses one
 is a contract on the entry under test, not a whole-program comparison:
 
   0x435373  declared audio cue service (tools/original_service_boundaries.json)
-  0x412181  field position event trigger router, owned by the integrator session
-  0x413787  map position event trigger, owned by the integrator session
+  0x412181  field position event trigger router
+  0x413787  map position event trigger
 
 Fixture layout, little endian:
   'FSBCMAPO' u32 group_count

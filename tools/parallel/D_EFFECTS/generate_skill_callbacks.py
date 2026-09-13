@@ -11,10 +11,9 @@ Reads tools/parallel/D_EFFECTS/inventory.json and, for the bodies that also have
 cue phases, the recorded disassembly. Writes into src/visual_effects/:
 skill_callback_table.inc, skill_callback_phases.inc and d_effects_bridge.cpp.
 
-Note: this reads the generated bodies in src/recovered/, which no longer contain
-the entries already registered in tools/native_reconstructions.json. Rerun
-inventory.py from the baseline commit if the inventory has to be rebuilt.
+Requires recovered instruction bodies matching the inventory hashes.
 """
+import argparse
 import json
 import re
 import sys
@@ -23,7 +22,6 @@ from pathlib import Path
 HERE = Path(__file__).resolve()
 sys.path.insert(0, str(HERE.parent))
 ROOT = HERE.parents[3]
-CACHE = Path('/Users/ysim/repo/fsb/decompiled/functions')
 
 from analyze_presentation import describe  # noqa: E402
 from inventory import load_disassembly  # noqa: E402
@@ -80,9 +78,9 @@ bool RecoveredBattle::dispatch_d_effects(Address entry) {{
 '''
 
 
-def identity(source):
+def identity(source, cache):
     """Skill id and label the recovery recorded for this callback row."""
-    path = CACHE / source
+    path = cache / source
     if not path.exists():
         return None, None
     match = SKILL_ID.search(path.read_text(errors='replace'))
@@ -123,6 +121,11 @@ def collect(inventory):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--decompiled', required=True, type=Path, help='Decompiler function directory')
+    args = parser.parse_args()
+    if not args.decompiled.is_dir():
+        parser.error('--decompiled must be a directory')
     inventory = json.loads((HERE.parent / 'inventory.json').read_text())
     rows = collect(inventory)
 
@@ -151,7 +154,7 @@ def main():
             body = ', '.join(f'{{{p["phase"]}, {KIND[p["action"]]}, {hex(p["value"])}}}' for p in phases)
             phase_lists.append(f'constexpr PhaseAction {name}[] = {{{body}}};')
         comment = record['name']
-        skill, label = identity(record['source'])
+        skill, label = identity(record['source'], args.decompiled)
         if skill:
             comment += f' [skill {skill}{" " + label if label else ""}]'
         table.append(f'{{{entry}, {routine}, {{{rendered[0]}, {rendered[1]}}}, '

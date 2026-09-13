@@ -769,8 +769,8 @@ def ai_regions(oracle):
 
     The reconstruction clips footprints to the map, while the original stamps
     past the overlay when one crosses an edge and corrupts the AI metadata
-    behind it. That divergence predates this session, so every case here keeps
-    its footprints inside the map and the two agree exactly.
+    behind it. These cases keep footprints inside the map, where the two agree
+    exactly; they do not cover the out-of-bounds behaviour.
     """
     o = oracle
     width, height = o.read(GRID_WIDTH), o.read(GRID_HEIGHT)

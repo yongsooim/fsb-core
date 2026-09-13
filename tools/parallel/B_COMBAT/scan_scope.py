@@ -4,7 +4,7 @@
 Reads the generated recovered bodies, whose comments carry the original
 instruction bytes and mnemonics, and reports for each assigned entry the
 functions it calls. Bundles start at the leaves so a reconstruction never
-depends on an unreconstructed callee inside the same session.
+depends on an unreconstructed callee inside the same scope.
 """
 import json,re,sys
 from collections import defaultdict

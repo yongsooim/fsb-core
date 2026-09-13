@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
-"""Emit the native_reconstructions.json fragment for the entries this session moved.
-
-Writes handoff/D_EFFECTS/registrations.json, which the integration session merges
-into tools/native_reconstructions.json before rerunning the generator. Passing
---apply also merges it into this clone's copy, so the product wiring can be built
-and checked here without editing the shared original.
-"""
+"""Export reconstructed effect entry points. --apply also updates the registry."""
+import argparse
 import json
 import sys
 from pathlib import Path
@@ -85,7 +80,7 @@ OBJECT_BRIDGE = 'effect_objects_bridge.cpp'
 
 
 def rows():
-    """Every entry point this session reconstructed, with its implementation."""
+    """Reconstructed effect entry points and their implementations."""
     table = (ROOT / 'src/visual_effects/skill_callback_table.inc').read_text().splitlines()
     for line in table:
         if not line.startswith('{0x'):
@@ -105,8 +100,12 @@ def rows():
 
 
 def main(argv):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('output', type=Path, help='Registration fragment destination')
+    parser.add_argument('--apply', action='store_true', help='Also update tools/native_reconstructions.json')
+    args = parser.parse_args(argv)
     fragment = dict(rows())
-    destination = ROOT / 'handoff/D_EFFECTS/registrations.json'
+    destination = args.output
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(json.dumps({
         'description': 'D_EFFECTS entry points reconstructed as semantic C++. Merge these '
@@ -114,9 +113,9 @@ def main(argv):
         'bridge_source': f'src/visual_effects/{BRIDGE}',
         'entries': fragment,
     }, indent=2) + '\n')
-    print(f'registrations {len(fragment)} -> {destination.relative_to(ROOT)}')
+    print(f'registrations {len(fragment)} -> {destination}')
 
-    if '--apply' in argv:
+    if args.apply:
         registry_path = ROOT / 'tools/native_reconstructions.json'
         registry = json.loads(registry_path.read_text())
         registry['entries'].update(fragment)

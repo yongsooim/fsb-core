@@ -7,6 +7,7 @@ only as a naming hint; nothing here decides semantics from a name.
 
 Output: tools/parallel/D_EFFECTS/inventory.json
 """
+import argparse
 import collections
 import hashlib
 import json
@@ -15,8 +16,6 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
-SCOPES = ROOT / 'tasks/parallel/scopes.json'
-CACHE = Path('/Users/ysim/repo/fsb/decompiled/functions')
 
 FUNC_SPLIT = re.compile(r'\nvoid RecoveredBattle::(fn_[0-9a-f]+)\(\)\{\n')
 INSN = re.compile(r'^L([0-9a-f]+): \{ // ([0-9a-f]+)\s+(\S+)(?: (.*))?$', re.M)
@@ -94,9 +93,9 @@ def classify(insns):
     }
 
 
-def readability(source):
+def readability(source, cache):
     """Pull the cache's READABILITY note, when the cache has one."""
-    path = CACHE / source
+    path = cache / source
     if not path.exists():
         return None
     text = path.read_text(errors='replace')
@@ -108,7 +107,13 @@ def readability(source):
 
 
 def main():
-    scopes = json.loads(SCOPES.read_text())
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--scopes', required=True, type=Path, help='Original function scope manifest')
+    parser.add_argument('--decompiled', required=True, type=Path, help='Decompiler function directory')
+    args = parser.parse_args()
+    if not args.scopes.is_file() or not args.decompiled.is_dir():
+        parser.error('--scopes must be a file and --decompiled must be a directory')
+    scopes = json.loads(args.scopes.read_text())
     entries = scopes['workers']['D_EFFECTS']['entries']
     mine = {e['entry'] for e in entries}
     disassembly = load_disassembly(entries)
@@ -134,7 +139,7 @@ def main():
             'calls': calls,
             'calls_outside_scope': [c for c in calls if c not in mine],
             'forwarder': classify(insns),
-            'note': readability(e['source']),
+            'note': readability(e['source'], args.decompiled),
         }
 
     callers = collections.defaultdict(list)

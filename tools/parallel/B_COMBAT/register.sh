@@ -1,14 +1,22 @@
 #!/bin/sh
 # Register entries, regenerate, rebuild and run the whole suite.
 # Usage: register.sh <entry>=<implementation> ...
+# FSB_ORACLE_PYTHON: Python executable with the x86 reference dependencies.
+# FSB_DECOMPILED_DIR: decompiled function directory.
+# FSB_REGISTRATIONS_FILE: existing B_COMBAT registration fragment.
+# Relative input paths are resolved from the repository root.
 set -e
 cd "$(dirname "$0")/../../.."
-ORACLE=/Users/ysim/Documents/Codex/2026-09-08/repo-fsb-x20/work/x86-oracle-env/bin/python
-DECOMPILED=/Users/ysim/repo/fsb/decompiled/functions
+: "${FSB_ORACLE_PYTHON:?Set FSB_ORACLE_PYTHON to the reference Python executable}"
+: "${FSB_DECOMPILED_DIR:?Set FSB_DECOMPILED_DIR to the decompiled function directory}"
+: "${FSB_REGISTRATIONS_FILE:?Set FSB_REGISTRATIONS_FILE to the registration fragment}"
+test -d "$FSB_DECOMPILED_DIR"
+test -f "$FSB_REGISTRATIONS_FILE"
+command -v "$FSB_ORACLE_PYTHON" >/dev/null
 python3 - "$@" <<'PY'
-import json, sys
+import json, os, sys
 from pathlib import Path
-p = Path('handoff/B_COMBAT/registrations.json')
+p = Path(os.environ['FSB_REGISTRATIONS_FILE'])
 d = json.loads(p.read_text())
 for pair in sys.argv[1:]:
     entry, implementation = pair.split('=', 1)
@@ -17,9 +25,8 @@ for pair in sys.argv[1:]:
 p.write_text(json.dumps(d, indent=2) + '\n')
 print('fragment holds', len(d['entries']))
 PY
-python3 tools/parallel/B_COMBAT/merge_registrations.py tools/native_reconstructions.json handoff/B_COMBAT/registrations.json
-PYTHONPATH=tools "$ORACLE" tools/translate_battle.py assets/FLYINGSB.EXE "$DECOMPILED" . \
-  | python3 -c "import json,sys;d=json.loads(sys.stdin.read());print({k:d[k] for k in ['emitted_functions','native_reconstructions']})"
+python3 tools/parallel/B_COMBAT/merge_registrations.py tools/native_reconstructions.json "$FSB_REGISTRATIONS_FILE"
+PYTHONPATH=tools "$FSB_ORACLE_PYTHON" tools/translate_battle.py assets/FLYINGSB.EXE "$FSB_DECOMPILED_DIR" .
 cmake -S . -B build-worker -DCMAKE_BUILD_TYPE=Release -DFSB_CORE_BUILD_TEXT_RENDERER=OFF -DFSB_CORE_BUILD_SDL_HOST=OFF >/dev/null
-cmake --build build-worker -j 4 2>&1 | grep -E "error:" || true
-ctest --test-dir build-worker -j 4 2>&1 | tail -3
+cmake --build build-worker --parallel 4
+ctest --test-dir build-worker --parallel 4 --output-on-failure
